@@ -1,0 +1,3 @@
+Y:/Desktop/lab2/98lab2/cmake-build-debug/CMakeFiles/98lab2.dir
+Y:/Desktop/lab2/98lab2/cmake-build-debug/CMakeFiles/edit_cache.dir
+Y:/Desktop/lab2/98lab2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
