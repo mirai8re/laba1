@@ -8,7 +8,7 @@ DWORD WINAPI minMaxThread(void* args)
     threadParams* params = static_cast<threadParams*>(args);
     double* arr = params->arr;
     int n = params->n;
-    double min = INT_MAX;
+    int min = INT_MAX;
     double max = INT_MIN;
 
     for (int i = 0; i < n; ++i)
@@ -18,11 +18,11 @@ DWORD WINAPI minMaxThread(void* args)
         Sleep(7);
     }
 
-    std::cout << "min is : " << min << std::endl;
-    std::cout << "max is : " << max << std::endl;
-
     params->ret.min = min;
     params->ret.max = max;
+
+    printf("min is : %d /n", static_cast<int>(min));
+    printf("max is : %d /n", static_cast<int>(max));
 
     return 0;
 }
@@ -40,7 +40,7 @@ DWORD WINAPI averageThread(void* args)
         Sleep(12);
     }
     if (n != 0) average /= n;
-    std::cout << "Average is : " << average << std::endl;
+    printf("Average is :  %d /n", static_cast<int>(average));
     params->ret.average = average;
 
     return 0;
@@ -60,7 +60,8 @@ bool createMinMax(threadParams* params){
     );
     if (hThread == NULL)
     {
-        std::cout<<"Creating \"minMax\" thread";
+        printf("Creating \"minMax\" thread   /n");
+
         return false;
     }
 
@@ -83,7 +84,7 @@ bool createAverage(threadParams* params){
     );
     if (hThread == NULL)
     {
-        std::cout<<"Creating \"average\" thread";
+        printf("Creating \"average\" thread   /n");
         return false;
     }
 
@@ -97,33 +98,33 @@ void outArr(T* arr, int n)
 {
     for (int i = 0; i < n; i++)
     {
-        std::cout << arr[i] << ' ';
+        printf(reinterpret_cast<const char *>(static_cast<int>(arr[i])));
+
     }
 }
 
 int main()
 {
-    std::cout << "Enter n: ";
+
+    printf("Enter n: /n");
     int n;
-    std::cin >> n;
+    scanf_s("%d", &n);
     double* arr = new double[n];
 
     if (!arr)
     {
-        std::cout<<"Couldn't allocate resources";
+        printf("Couldn't allocate resources ");
         return 0;
     }
-
-    std::cout << "Enter array elements : ";
+    printf("Enter array elements : ");
     for (int i = 0; i < n; ++i)
     {
         std::cin >> arr[i];
     }
 
     threadParams* params = new threadParams(arr, n);
-    if (!params)
-    {
-        std::cout<<"Couldn't allocate resources";
+    if (!params){
+        printf("Couldn't allocate resources ");
         return 0;
     }
 
@@ -138,9 +139,10 @@ int main()
         if (arr[i] == min || arr[i] == max) arr[i] = average;
     }
 
-    std::cout << "Final array is : ";
+
+    printf("Final array is : ");
     outArr(arr, n);
-    std::cout << std::endl;
+    printf("/n");
 
     delete params;
     delete[] arr;
