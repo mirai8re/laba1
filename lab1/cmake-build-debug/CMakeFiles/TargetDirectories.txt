@@ -1,0 +1,5 @@
+Y:/Desktop/lab1/cmake-build-debug/CMakeFiles/creator.dir
+Y:/Desktop/lab1/cmake-build-debug/CMakeFiles/reporter.dir
+Y:/Desktop/lab1/cmake-build-debug/CMakeFiles/main.dir
+Y:/Desktop/lab1/cmake-build-debug/CMakeFiles/edit_cache.dir
+Y:/Desktop/lab1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
