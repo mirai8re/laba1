@@ -1,0 +1,4 @@
+C:/Users/anya/CLionProjects/98lab4/cmake-build-debug/CMakeFiles/Receiver.dir
+C:/Users/anya/CLionProjects/98lab4/cmake-build-debug/CMakeFiles/Sender.dir
+C:/Users/anya/CLionProjects/98lab4/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/anya/CLionProjects/98lab4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
