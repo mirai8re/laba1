@@ -1,0 +1,4 @@
+Y:/Desktop/98lab5/cmake-build-debug/CMakeFiles/server.dir
+Y:/Desktop/98lab5/cmake-build-debug/CMakeFiles/client.dir
+Y:/Desktop/98lab5/cmake-build-debug/CMakeFiles/edit_cache.dir
+Y:/Desktop/98lab5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
