@@ -1,7 +1,0 @@
-# ninja log v5
-14	148	6881579321575616	CMakeFiles/14lab2.dir/errors.cpp.obj	3823f8f7bde40bf0
-156	1116	6881578963408250	CMakeFiles/14lab2.dir/minMaxThread.cpp.obj	ad717064f3844ede
-12	1016	6881578962399068	CMakeFiles/14lab2.dir/averageThread.cpp.obj	a6bd20719ad67469
-18	155	6881578953749015	CMakeFiles/14lab2.dir/returnValues.cpp.obj	145ed3a0a03870b
-5	1214	6881579332250810	CMakeFiles/14lab2.dir/main.cpp.obj	39512992350954c6
-1215	1400	6881579334064015	14lab2.exe	96e370fa70650062
