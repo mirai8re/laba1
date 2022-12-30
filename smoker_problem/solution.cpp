@@ -1,4 +1,4 @@
-
+//Миронова Анна, 2 курс, 7 группа, задача о курильщиках 
 #include <pthread.h>
 #include <semaphore.h>
 #include <stdbool.h>
