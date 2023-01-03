@@ -38,7 +38,7 @@ int main(int argc, char **argv)
     if (argc == 4)
     {
         string inputFile(argv[1]);
-        //! If it isn't a valid file just exit
+ 
         if (!CheckFile(inputFile))
         {
             return -1;
@@ -46,7 +46,7 @@ int main(int argc, char **argv)
         string outputFile(argv[2]);
         string sortAlgorithm(argv[3]);
         unique_ptr<SortBase> sorter{};
-        //! Just can't work if one of the valid algorithms was received in param 3
+ 
         if (sortAlgorithm.compare("bubble") == 0)
         {
             sorter = make_unique<Bubble>(outputFile);
